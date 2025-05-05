@@ -1,23 +1,13 @@
 {
-  "name": "html-css",
+  "name": "games",
   "version": "1.0.0",
-  "description": "A template for HTML and CSS",
-  "main": "index.html",
+  "description": "Host SWF files with Express and CORS enabled",
+  "main": "server.js",
   "scripts": {
-    "build": "echo no build",
     "start": "node server.js"
   },
-  "keywords": [
-    "html",
-    "css"
-  ],
-  "author": "Ives van Hoorne",
-  "license": "MIT",
-  "devDependencies": {
-    "serve": "11.2.0"
-  },
   "dependencies": {
-    "body-parser": "2.2.0",
-    "express": "5.1.0"
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
   }
 }
