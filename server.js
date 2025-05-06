@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const cors = require("cors");
 const path = require("path");
 
@@ -18,4 +18,14 @@ app.get("/", (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
+}); */
+const express = require("express");
+const app = express();
+const PORT = process.env.PORT || 10000;
+
+// Serve files from the 'files' directory
+app.use("/files", express.static("files"));
+
+app.listen(PORT, () => {
+  console.log(`Server is running at http://localhost:${PORT}`);
 });
